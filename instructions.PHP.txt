@@ -1,0 +1,28 @@
+<?php
+include "access.php";
+?>
+<link rel="stylesheet" type="text/css" href="css/instructions.css" />
+<html>
+<body>
+<div id="page-wrap">
+
+<form action="ROUND1.php" method="post"id="instructions" >
+
+	<h1>INSTRUCTIONS</h1>
+	
+<ol>
+<li>
+<h2>Each Question Carries 1 Mark</h2>
+</li>
+<li>
+<h2>No Negative Marks</h2>
+</li>
+<li>
+<h2>Assume Headerfiles Whenever Necessary</h2> 
+</li>
+<input type="submit" name="submit" value="START EXAM"> 
+</OL>
+</form>
+</div>
+</body>
+</html>

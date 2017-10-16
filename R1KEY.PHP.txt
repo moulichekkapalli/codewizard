@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>PHP Quiz</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+        <h2>RESULT</h2>
+
+	<div id="page-wrap">
+
+		
+		
+        <?php
+		if(!isset($_POST['SQ']))
+{
+	header('Location:Login.php?id=0');
+}
+	else
+	{
+		
+			if(empty($_POST ['question-1-answers']))
+		  {
+			$answer1=NULL;  
+		  }
+		  else
+		  {
+			$answer1  = $_POST ['question-1-answers'] ;  
+		  }
+            
+		if(empty($_POST['question-2-answers']))
+		  {
+			$answer2=NULL;  
+		  }
+		  else
+		  {
+			$answer2  = $_POST['question-2-answers']; 
+		  }
+            if(empty($_POST['question-3-answers']))
+		  {
+			$answer3=NULL;  
+		  }
+		  else
+		  {
+			$answer3  = $_POST['question-3-answers'];  
+		  }
+            if(empty($_POST['question-4-answers']))
+		  {
+			$answer4=NULL;  
+		  }
+		  else
+		  {
+			$answer4 = $_POST['question-4-answers'] ;  
+		  }
+            if(empty($_POST ['question-5-answers']))
+		  {
+			$answer5=NULL;  
+		  }
+		  else
+		  {
+			$answer5 = $_POST ['question-5-answers'] ;  
+		  }
+            if(empty($_POST ['question-6-answers']))
+		  {
+			$answer6=NULL;  
+		  }
+		  else
+		  {
+			$answer6  = $_POST ['question-6-answers'] ;  
+		  }
+            if(empty($_POST ['question-7-answers']))
+		  {
+			$answer7=NULL;  
+		  }
+		  else
+		  {
+			$answer7  = $_POST ['question-7-answers'] ;  
+		  }
+            if(empty($_POST ['question-8-answers']))
+		  {
+			$answer8=NULL;  
+		  }
+		  else
+		  {
+			$answer8  = $_POST ['question-8-answers'] ;  
+		  }
+            if(empty($_POST ['question-9-answers']))
+		  {
+			$answer9=NULL;  
+		  }
+		  else
+		  {
+			$answer9  = $_POST ['question-9-answers'] ;  
+		  }
+            if(empty($_POST ['question-10-answers']))
+		  {
+			$answer10=NULL;  
+		  }
+		  else
+		  {
+			$answer10  = $_POST ['question-10-answers'] ;  
+		  }
+           if(empty($_POST ['question-11-answers']))
+		  {
+			$answer11=NULL;  
+		  }
+		  else
+		  {
+			$answer11  = $_POST ['question-11-answers'] ;  
+		  }
+            
+		if(empty($_POST['question-12-answers']))
+		  {
+			$answer12=NULL;  
+		  }
+		  else
+		  {
+			$answer12  = $_POST['question-12-answers']; 
+		  }
+            if(empty($_POST['question-13-answers']))
+		  {
+			$answer13=NULL;  
+		  }
+		  else
+		  {
+			$answer13  = $_POST['question-13-answers'];  
+		  }
+            if(empty($_POST['question-14-answers']))
+		  {
+			$answer14=NULL;  
+		  }
+		  else
+		  {
+			$answer14  = $_POST['question-14-answers'] ;  
+		  }
+            if(empty($_POST ['question-15-answers']))
+		  {
+			$answer15=NULL;  
+		  }
+		  else
+		  {
+			$answer15  = $_POST ['question-15-answers'] ;  
+		  }
+            if(empty($_POST ['question-16-answers']))
+		  {
+			$answer16=NULL;  
+		  }
+		  else
+		  {
+			$answer16  = $_POST ['question-16-answers'] ;  
+		  }
+            if(empty($_POST ['question-17-answers']))
+		  {
+			$answer17=NULL;  
+		  }
+		  else
+		  {
+			$answer17  = $_POST ['question-17-answers'] ;  
+		  }
+            if(empty($_POST ['question-18-answers']))
+		  {
+			$answer18=NULL;  
+		  }
+		  else
+		  {
+			$answer18 = $_POST ['question-18-answers'] ;  
+		  }
+            if(empty($_POST ['question-19-answers']))
+		  {
+			$answer19=NULL;  
+		  }
+		  else
+		  {
+			$answer19  = $_POST ['question-19-answers'] ;  
+		  }
+            if(empty($_POST ['question-20-answers']))
+		  {
+			$answer20=NULL;  
+		  }
+		  else
+		  {
+			$answer20 = $_POST ['question-20-answers'] ;  
+		  } 	
+           
+            $totalCorrect = 0;
+            
+            if ($answer1 == "C") { $totalCorrect++; }
+            if ($answer2 == "A") { $totalCorrect++; }
+            if ($answer3 == "A") { $totalCorrect++; }
+            if ($answer4 == "D") { $totalCorrect++; }
+            if ($answer5 == "C") { $totalCorrect++; }
+            if ($answer6 == "C") { $totalCorrect++; }
+            if ($answer7 == "A") { $totalCorrect++; }
+            if ($answer8 == "A") { $totalCorrect++; }
+            if ($answer9 == "D" ) { $totalCorrect++; }
+            if ($answer10 == "B") { $totalCorrect++; }
+
+            if ($answer11 == "C") { $totalCorrect++; }
+            if ($answer12 == "B") { $totalCorrect++; }
+            if ($answer13 == "C") { $totalCorrect++; }
+            if ($answer14 == "C") { $totalCorrect++; }
+	        if ($answer15 == "C") { $totalCorrect++; }
+            if ($answer16 == "D") { $totalCorrect++; }
+            if ($answer17 == "A") { $totalCorrect++; }
+            if ($answer18 == "C") { $totalCorrect++; }
+            if ($answer19 == "B" ) { $totalCorrect++; }
+            if ($answer20 == "B") { $totalCorrect++; }  
+			
+			
+			
+		session_start();
+		include "dbconn.php";			
+			$user1=$_SESSION['user'];
+			$name=$_SESSION['name'];
+			$mobile1=$_SESSION['mobile'];
+			$attempt1=1;
+              mysqli_query($conn,"UPDATE validation SET `marks`='$totalCorrect',`attempt`='$attempt1',`name`='$name',`mobile`='$mobile1'WHERE username='$user1'"); 
+            echo "<div id='results'>YOU SCORED $totalCorrect OUT OF 20 MARKS</div>";
+	}
+			
+            
+        ?>
+		
+	
+	</div>
+	
+
+</body>
+
+</html>

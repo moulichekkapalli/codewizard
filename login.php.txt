@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="css/style1.css">
+<form action="instructions.php" method="post" id="login">
+ </head>
+<body>
+  <div class="login">
+	
+    
+    	<input type="text" name="u" placeholder="Username" required="required" />
+        <input type="password" name="p" placeholder="Password" required="required" />
+		<input type="text" name="n" placeholder="Name" required="required" />
+		<input type="text" name="m" placeholder="Mobile Number" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">LOGIN</button>
+    </form>
+</div>
+ </body>
+</html>

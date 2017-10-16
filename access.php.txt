@@ -1,0 +1,28 @@
+<?php
+session_start();
+	include "dbconn.php";
+	$username=$_POST['u'];
+	$password=$_POST['p'];
+	$_SESSION['name']=$_POST['n'];
+	$_SESSION['mobile']=$_POST['m'];
+	$rset=mysqli_query($conn,"SELECT * from validation where username='$username' and password='$password'");
+	$rows=mysqli_num_rows($rset);
+	
+	$row=mysqli_fetch_assoc($rset);
+	$_SESSION['xyz']=$row['attempt'];
+	$attempt=$_SESSION['xyz'];
+   if(($rows!==0)&&($attempt==NULL))
+	{
+		
+		$_SESSION['user']=$row['username'];
+		
+	}
+	else{
+		echo "not connected";
+		header('Location:Login.php?id=0');
+		
+		session_destroy();
+		
+	}
+	
+	?>

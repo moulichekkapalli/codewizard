@@ -1,0 +1,677 @@
+<?PHP 
+session_start();
+echo "<script type='text/javascript' src='JS/timer.js'> </script>";
+
+if(!isset($_POST['submit']))
+{
+	session_destroy();
+	header('Location:Login.php?id=0');
+}
+?>
+<html>
+<head>
+	
+	
+	<title>Code Wizard Quiz</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<h1>CODE WIZARD</h1>
+            <h2>   <span input type="text" id="countdown" class="timer" align="left" ></span>	</h2>
+		<form action="R1KEY.php" method="post" id="quiz">
+		  
+		 
+		 
+
+
+		 
+		
+            <ol>
+            
+                <li>
+                
+                    <h3>Which of the following cannot be checked in a switch-case statement?	</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A)Character </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B)Integer </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C)Float </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                        <label for="question-1-answers-D">D) Enum</label>
+                    </div>
+                
+                </li>
+           
+                <li>
+                
+                    <h3>How would you round off a value from 1.66 to 2.0?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A">A)ceil(1.66) </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">B)floor(1.66) </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C">C)roundup(1.66)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                        <label for="question-2-answers-D">D)roundto(1.66)</label>
+                    </div>
+                
+                </li>
+              
+                <li>
+                
+                    <h3>
+What will be the output of the program?<br>
+#include&ltstdio.h&gt<br>
+
+int main()<br>
+{<br>
+    int y=128;<br>
+    const int x=y;<br>
+    printf("%d\n", x);<br>
+    return 0;<br>
+}<br>
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">A)128</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B">B)Garbage value</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C)Error</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                        <label for="question-3-answers-D">D)0 </label>
+                    </div>
+                
+                </li>
+                <li>
+                
+                    <h3>Which of the following special symbol allowed in a variable name?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">A)* (asterisk)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">B)| (pipeline)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C)- (hyphen)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                        <label for="question-4-answers-D">D)_ (underscore)</label>
+                    </div>
+                
+                </li>
+                
+
+                <li>
+                
+                    <h3>Input/output function prototypes and macros are defined in which header file?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A)conio.h</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B)stdlib.h</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C)stdio.h</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D)dos.h</label>
+                    </div>
+                
+                </li>
+		
+
+		<li>
+                
+                    <h3>How many times "CODE_WIZARD" will prints?<br>
+int main()<br>
+{<br>
+    int x;<br>
+    for(x=-1; x<=10; x++)<br>
+    {<br>
+        if(x < 5)<br>
+            continue;<br>
+        else<br>
+            break;<br>
+        printf("CODE_WIZARD");<br>
+    }<br>
+    return 0;<br>
+}<br>
+
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" />
+                        <label for="question-6-answers-A">A)Infinite times</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-B" value="B" />
+                        <label for="question-6-answers-B">B)11 times</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-C" value="C" />
+                        <label for="question-6-answers-C">C)0 times</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-D" value="D" />
+                        <label for="question-6-answers-D">D)10 times</label>
+                    </div>
+                
+                </li>
+
+				<li>
+                
+                    <h3>Which of the following is not 	a coding language?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-A" value="A" />
+                        <label for="question-7-answers-A">A)PYPE
+</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-B" value="B" />
+                        <label for="question-7-answers-B">B)PIKE</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-C" value="C" />
+                        <label for="question-7-answers-C">C)TCL </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-D" value="D" />
+                        <label for="question-7-answers-D">D)ALL THE ABOVE</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+				
+                
+                    <h3>
+What will happen after compiling and running following code?<br>
+            #define FALSE -1<br>
+            #define TRUE   1<br>
+            #define NULL   0<br>
+            main()<br>
+              {<br>
+               if(NULL)<br>
+                        puts("NULL");<br>
+               else if(FALSE)<br>
+                        puts("TRUE");<br>
+               else<br>
+                        puts("FALSE");<br>
+               }<br>
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-A" value="A" />
+                        <label for="question-8-answers-A">A)FALSE</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-B" value="B" />
+                        <label for="question-8-answers-B">B)TRUE</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-C" value="C" />
+                        <label for="question-8-answers-C">C)NULL </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-D" value="D" />
+                        <label for="question-8-answers-D">D)NOTHING</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+               
+
+		
+                
+                    <h3>Local Variable is having _______ scope ?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-A" value="A" />
+                        <label for="question-9-answers-A">A)inter program</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-B" value="B" />
+                        <label for="question-9-answers-B">B)local</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-C" value="C" />
+                        <label for="question-9-answers-C">C) global</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-D" value="D" />
+                        <label for="question-9-answers-D">D)only inside current Program</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>A local variable is stored in</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-A" value="A" />
+                        <label for="question-10-answers-A">A)code segment</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-B" value="B" />
+                        <label for="question-10-answers-B">B)stack segment</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-C" value="C" />
+                        <label for="question-10-answers-C">C)heap segment </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-D" value="D" />
+                        <label for="question-10-answers-D">D)none of the above</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+<h3>
+Point out the compile time error in the program given below.<br>
+#include<stdio.h><br>
+
+int main()<br>
+{<br>
+    int *x;<br>
+    *x=100;<br>
+    return 0;<br>
+}<br>
+                    
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-A" value="A" />
+                        <label for="question-11-answers-A">A)Error: invalid assignment for x</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-B" value="B" />
+                        <label for="question-11-answers-B">B)Error: suspicious pointer conversion</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-C" value="C" />
+                        <label for="question-11-answers-C">C)No error </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-D" value="D" />
+                        <label for="question-11-answers-D">D)None of above</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>When we mention the prototype of a function?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-A" value="A" />
+                        <label for="question-12-answers-A">A)Defining</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-B" value="B" />
+                        <label for="question-12-answers-B">B)Declaring</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-C" value="C" />
+                        <label for="question-12-answers-C">C)Prototyping </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-D" value="D" />
+                        <label for="question-12-answers-D">D)Calling</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>What function should be used to free the memory allocated by calloc() ?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-A" value="A" />
+                        <label for="question-13-answers-A">A)dealloc();</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-B" value="B" />
+                        <label for="question-13-answers-B">B)malloc(variable_name, 0)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-C" value="C" />
+                        <label for="question-13-answers-C">C) free()</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-D" value="D" />
+                        <label for="question-13-answers-D">D)memalloc(variable_name, 0)</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>Which of the following algorithm design technique is used in the quick sort algorithm?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-14-answers" id="question-14-answers-A" value="A" />
+                        <label for="question-14-answers-A">A)Dynamic programming</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-14-answers" id="question-14-answers-B" value="B" />
+                        <label for="question-14-answers-B">B)Backtracking</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-14-answers" id="question-14-answers-C" value="C" />
+                        <label for="question-14-answers-C">C)Divide and conquer </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-14-answers" id="question-14-answers-D" value="D" />
+                        <label for="question-14-answers-D">D)Greedy method</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>"A pointer to a function which receives an int pointer and returns float pointer".</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-15-answers" id="question-15-answers-A" value="A" />
+                        <label for="question-15-answers-A">A)float *(ptr)*int;</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-15-answers" id="question-15-answers-B" value="B" />
+                        <label for="question-15-answers-B">B)float *(*ptr)(int)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-15-answers" id="question-15-answers-C" value="C" />
+                        <label for="question-15-answers-C">C)float *(*ptr)(int*) </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-15-answers" id="question-15-answers-D" value="D" />
+                        <label for="question-15-answers-D">D)float (*ptr)(int)</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>Find the output for the following program?<br>
+void main()<br>
+{<br>
+   printf("%x",-1<<4);<br>
+}<br>
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-16-answers" id="question-16-answers-A" value="A" />
+                        <label for="question-16-answers-A">A)0FFF</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-16-answers" id="question-16-answers-B" value="B" />
+                        <label for="question-16-answers-B">B)0000</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-16-answers" id="question-16-answers-C" value="C" />
+                        <label for="question-16-answers-C">C)FFFF</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-16-answers" id="question-16-answers-D" value="D" />
+                        <label for="question-16-answers-D">D)FFFF0</label>
+                    </div>
+                
+                </li>
+		         
+		<li>
+                    <h3>
+What will happen after compiling and running following code?<br>
+#include<stdio.h><br>
+int i;<br>
+int fun();<br>
+
+int main()<br>
+{<br>
+    while(i)<br>
+    {<br>
+        fun();<br>
+        main();<br>
+    }
+    printf("ISTE\n");<br>
+    return 0;<br>
+}<br>
+int fun()<br>
+{<br>
+    printf("SRKR");<br>
+}<br>
+
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-17-answers" id="question-17-answers-A" value="A" />
+                        <label for="question-17-answers-A">A)ISTE</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-17-answers" id="question-17-answers-B" value="B" />
+                        <label for="question-17-answers-B">B)SRKR</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-17-answers" id="question-17-answers-C" value="C" />
+                        <label for="question-17-answers-C">C)SRKRISTE </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-17-answers" id="question-17-answers-D" value="D" />
+                        <label for="question-17-answers-D">D)ISTESRKR</label>
+                    </div>
+                
+                </li>
+		         
+		<li>
+                
+                    <h3>
+What will happen after compiling and running following code?<br>
+main()<br>
+{ <br>
+     printf("%p", main); <br>
+}<br>
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-18-answers" id="question-18-answers-A" value="A" />
+                        <label for="question-18-answers-A">A)Error</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-18-answers" id="question-18-answers-B" value="B" />
+                        <label for="question-18-answers-B">B)Will make an infinite loop.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-18-answers" id="question-18-answers-C" value="C" />
+                        <label for="question-18-answers-C">C)Some address will be printed. </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-18-answers" id="question-18-answers-D" value="D" />
+                        <label for="question-18-answers-D">D)None of these.</label>
+                    </div>
+                
+                </li>
+		         
+		<li>
+                
+                    <h3>
+What will happen after compiling and running following code?<br>
+#include<stdio.h><br>
+#include<stdlib.h><br>
+
+int main()<br>
+{<br>
+    char *ptr;<br>
+    *ptr = (char)malloc(30);<br>
+    strcpy(ptr, "NIPUNA");<br>
+    printf("%s", ptr);<br>
+    free(ptr);<br>
+    return 0;<br>
+}<br>
+
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-19-answers" id="question-19-answers-A" value="A" />
+                        <label for="question-19-answers-A">A)Error: in strcpy() statement.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-19-answers" id="question-19-answers-B" value="B" />
+                        <label for="question-19-answers-B">B)Error: in *ptr = (char)malloc(30);</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-19-answers" id="question-19-answers-C" value="C" />
+                        <label for="question-19-answers-C">C)Error: in free(ptr); </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-19-answers" id="question-19-answers-D" value="D" />
+                        <label for="question-19-answers-D">D)No error</label>
+                    </div>
+                
+                </li>
+	
+		<li>
+                
+                    <h3>
+What will happen after compiling and running following code?<br>
+main()<br>
+            {<br>
+            main();<br>
+            }<br>
+</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-20-answers" id="question-20-answers-A" value="A" />
+                        <label for="question-20-answers-A">A)Compile Error</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-20-answers" id="question-20-answers-B" value="B" />
+                        <label for="question-20-answers-B">B)Runtime Error</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-20-answers" id="question-20-answers-C" value="C" />
+                        <label for="question-20-answers-C">C)Infinite Loop </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-20-answers" id="question-20-answers-D" value="D" />
+                        <label for="question-20-answers-D">D)None of the above</label>
+                    </div>
+                
+                </li>
+	
+            </ol>
+            
+            <input type="submit" value="Submit Quiz" name="SQ" />
+		
+		</form>
+	
+	</div>
+
+</body>
+
+</html>
+ 
